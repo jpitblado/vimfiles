@@ -78,6 +78,9 @@ set nocindent
 " treat /bin/sh scripts as /bin/bash scripts
 let bash_is_sh = 1
 
+" clear all system mappings, I only want my personal mappings
+mapclear
+
 " use ',' as <leader> for global mappings
 let mapleader = ","
 " use ';' as <localleader> for local mappings
