@@ -1,6 +1,6 @@
-" .exrc -- my global mappings.
+" global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	09aug2014
+" Last Change:	11aug2014
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -62,4 +62,4 @@ nnoremap ,nd :r !date '+\%Y-\%m-\%d'<cr>02lgul0k
 " column ruler
 nnoremap ,nl o----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----<esc>0
 
-" end: .exrc
+" end: global.vim
