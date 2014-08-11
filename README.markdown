@@ -35,5 +35,6 @@ Here is a list of my Vim plugins, not part of this repository.
 ## License
 
 Copyright (c) Jeff Pitblado
+
 Distributed under the same terms as Vim itself.  See `:help license`.
 
