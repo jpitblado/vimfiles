@@ -15,11 +15,12 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 ## Thanks
 
-I use [pathogen.vim](https://github.com/tpope/vim-pathogen)
-by [Tim Pope's](https://github.com/tpope)
+I use
+[Tim Pope's](https://github.com/tpope)
+[pathogen.vim](https://github.com/tpope/vim-pathogen)
 for managing Vim plugins.
 
-A copy of `pathogen.vim` is included in the repository.
+A copy of `pathogen.vim` is included in this repository.
 
 ## See also
 
