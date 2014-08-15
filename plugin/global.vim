@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	11aug2014
+" Last Change:	15aug2014
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -14,52 +14,49 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ; mappings
+" global mappings
 
 " replace character with 'd' then go down one line
 nnoremap ;; rdj
 
 " paragraph fill
 "   to a line with no word characters
-nnoremap ;f mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>
-nnoremap ;g :set textwidth=72<cr>mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>:set textwidth=78<cr>
+nnoremap <leader>f mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>
+nnoremap <leader>g :set textwidth=72<cr>mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>:set textwidth=78<cr>
 "   to the end of a paragraph, more specific than ;f
-nnoremap ;q gq}
+nnoremap <leader>q gq}
 
 " switching between buffers
-nnoremap ;n :next<cr>
-nnoremap ;N :Next<cr>
+nnoremap <leader>n :next<cr>
+nnoremap <leader>N :Next<cr>
 
 " hide/unhide
-nnoremap ;h :hide<cr>
-nnoremap ;H :unhide<cr>
-
-" spell checking the current buffer
-nnoremap ;spell :setlocal spell spelllang=en_us<cr>
-nnoremap ;nospell :setlocal nospell<cr>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" other global maps
-
-" sort the following lines down to the next blank line
-nnoremap ,so ma}kmb'a:.,'b!sort<cr>'b
-nnoremap ,su ma}kmb'a:.,'b!sort -u<cr>'b
-nnoremap ,s$ :.,$!sort<cr>
-nnoremap ,s% :%!sort<cr>
-
-" make a character line (almost) the width of a typcial page
-nnoremap ,-- o<esc>77i-<esc>0
-nnoremap ,== o<esc>77i=<esc>0
+nnoremap <leader>h :hide<cr>
+nnoremap <leader>H :unhide<cr>
 
 " turn off search highlights
-nnoremap ,nn :nohlsearch<cr>
+nnoremap <leader>nn :nohlsearch<cr>
+
+" spell checking the current buffer
+nnoremap <leader>spell :setlocal spell spelllang=en_us<cr>
+nnoremap <leader>nospell :setlocal nospell<cr>
+
+" sort the following lines down to the next blank line
+nnoremap <leader>so ma}kmb'a:.,'b!sort<cr>'b
+nnoremap <leader>su ma}kmb'a:.,'b!sort -u<cr>'b
+nnoremap <leader>s$ :.,$!sort<cr>
+nnoremap <leader>s% :%!sort<cr>
+
+" make a character line (almost) the width of a typcial page
+nnoremap <leader>-- o<esc>77i-<esc>0
+nnoremap <leader>== o<esc>77i=<esc>0
+
+" column ruler
+nnoremap <leader>nl o----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----<esc>0
 
 " insert the date
 " e.g.: 07jan2002
-nnoremap ,dd :r !date '+\%d\%b\%Y'<cr>02lgul0k
-nnoremap ,nd :r !date '+\%Y-\%m-\%d'<cr>02lgul0k
-
-" column ruler
-nnoremap ,nl o----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----<esc>0
+nnoremap <leader>dd :r !date '+\%d\%b\%Y'<cr>02lgul0k
+nnoremap <leader>nd :r !date '+\%Y-\%m-\%d'<cr>02lgul0k
 
 " end: global.vim

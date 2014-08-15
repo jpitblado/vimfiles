@@ -81,10 +81,10 @@ let bash_is_sh = 1
 " clear all system mappings, I only want my personal mappings
 mapclear
 
-" use ',' as <leader> for global mappings
-let mapleader = ","
-" use ';' as <localleader> for local mappings
-let maplocalleader = ";"
+" use ';' as <leader> for global mappings
+let mapleader = ";"
+" use ',' as <localleader> for local mappings
+let maplocalleader = ","
 
 " change foreground and background colors
 highlight Normal guibg=Black guifg=White

@@ -1,0 +1,136 @@
+*global.txt* my global mappings
+
+                                  __      __          __ ~
+                           ____ _/ /___  / /_  ____ _/ / ~
+                          / __ `/ / __ \/ __ \/ __ `/ /  ~
+                         / /_/ / / /_/ / /_/ / /_/ / /   ~
+                         \__, /_/\____/_.___/\__,_/_/    ~
+                        /____/                           ~
+
+
+My global mappings.
+
+=============================================================================
+CONTENTS                                                      *GlobalContents*
+
+1. Mappings				|GlobalMappings|
+   1.1 Window				   |GlobalWindow|
+   1.2 Done				   |GlobalDone|
+   1.3 Paragraph filling		   |GlobalFilling|
+   1.4 Shortcuts			   |GlobalShortcuts|
+   1.5 Spelling				   |GlobalSpelling|
+   1.6 Sorting				   |GlobalSorting|
+   1.7 Lines				   |GlobalLines|
+   1.8 Dates				   |GlobalDates|
+3. License				|GlobalLicense|
+
+=============================================================================
+1. Mappings                                                  *GlobalMappings*
+
+I've developed the following mappings to help me find bugs in my Global code.
+
+-----------------------------------------------------------------------------
+1.1 Window                                                     *GlobalWindow*
+
+Bound to: <c-e> : equalize window sizes
+	  <c-h> : move to left  window
+	  <c-j> : move to down  window
+	  <c-k> : move to up    window
+	  <c-l> : move to right window
+
+-----------------------------------------------------------------------------
+1.2 Done                                                         *GlobalDone*
+
+Bound to: ;;
+
+Replace current character with 'd', move down one line.
+
+-----------------------------------------------------------------------------
+1.3 Paragraph filling                                         *GlobalFilling*
+
+Bound to: <leader>f
+          <leader>g
+          <leader>q
+
+<leader>f performs a paragraph fill from the current position down to a line
+with no word characters.
+
+<leader>g is the same as <leader>f, but temporarily sets the text width to 72.
+
+<leader>q performs a paragraph fill to the end of the current paragraph, as
+determined by '}'.
+
+-----------------------------------------------------------------------------
+1.4 Shortcuts                                               *GlobalShortcuts*
+
+Bound to: <leader>n
+          <leader>N
+          <leader>h
+          <leader>H
+          <leader>nn
+
+<leader>n is a shortcut for ':next'.
+
+<leader>N is a shortcut for ':Next'.
+
+<leader>h is a shortcut for ':hide'.
+
+<leader>H is a shortcut for ':unhide'.
+
+<leader>nn is a shortcut for ':nohlsearch'.
+
+-----------------------------------------------------------------------------
+1.5 Spelling                                                 *GlobalSpelling*
+
+Bound to: <leader>spell
+          <leader>nospell
+
+<leader>spell turns on spell checking, using 'en_us' as the language.
+
+<leader>nospedll turns off spell checking.
+
+-----------------------------------------------------------------------------
+1.6 Sorting                                                   *GlobalSorting*
+
+Bound to: <leader>so
+          <leader>su
+          <leader>s$
+          <leader>s%
+
+<leader>so sorts down to the next blank line, as determined by '}'.
+
+<leader>su sorts uniquely down to the next blank line, as determined by '}'.
+
+<leader>s$ sorts down to the end of the buffer.
+
+<leader>s% sorts the entire buffer.
+
+-----------------------------------------------------------------------------
+1.7 Lines                                                       *GlobalLines*
+
+Bound to: <leader>--
+          <leader>==
+          <leader>nl
+
+<leader>-- makes a character line using '-'.
+
+<leader>== makes a character line using '='.
+
+<leader>nl makes a numbered line.
+
+-----------------------------------------------------------------------------
+1.8 Dates                                                       *GlobalDates*
+
+Bound to: <leader>dd
+          <leader>nd
+
+<leader>dd calls 'date' command using standard Stata date format.
+
+<leader>nd calls 'date' command using a standard numerical date format.
+
+=============================================================================
+3. License                                                    *GlobalLicense*
+
+Same as Vim (see |license|).
+
+=============================================================================
