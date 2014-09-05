@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	15aug2014
+" Last Change:	05sep2014
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -22,7 +22,7 @@ nnoremap ;; rdj
 " paragraph fill
 "   to a line with no word characters
 nnoremap <leader>f mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>
-nnoremap <leader>g :set textwidth=72<cr>mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>:set textwidth=78<cr>
+nnoremap <leader>gg :set textwidth=72<cr>mp/^\W*$/<cr>mq'pgq'q:nohlsearch<cr>:set textwidth=78<cr>
 "   to the end of a paragraph, more specific than ;f
 nnoremap <leader>q gq}
 
