@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	08oct2014
+" Last Change:	13oct2014
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -46,6 +46,7 @@ nnoremap <leader>nospell :setlocal nospell<cr>
 " sort the following lines down to the next blank line
 nnoremap <leader>so ma}kmb'a:.,'b!sort<cr>'b
 nnoremap <leader>su ma}kmb'a:.,'b!sort -u<cr>'b
+nnoremap <leader>s1 ma}kmb'a:.,'b!sort -k1,1<cr>'b
 nnoremap <leader>s$ :.,$!sort<cr>
 nnoremap <leader>s% :%!sort<cr>
 
