@@ -1,11 +1,12 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	13oct2014
+" Last Change:	24nov2014
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
 
 nnoremap <F2> :so map.vim<cr>
+nnoremap <F9> :so ../map.vim<cr>
 
 " make windows equal in dimension
 nnoremap <C-E> <C-W>=
