@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	24nov2014
+" Last Change:	29jan2015
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -43,6 +43,10 @@ nnoremap <leader>nn :nohlsearch<cr>
 " spell checking the current buffer
 nnoremap <leader>spell :setlocal spell spelllang=en_us<cr>
 nnoremap <leader>nospell :setlocal nospell<cr>
+
+" paste setting
+nnoremap <leader>p :setlocal paste<cr>
+nnoremap <leader>P :setlocal nopaste<cr>
 
 " sort the following lines down to the next blank line
 nnoremap <leader>so ma}kmb'a:.,'b!sort<cr>'b
