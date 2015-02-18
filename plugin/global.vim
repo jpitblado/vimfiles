@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	29jan2015
+" Last Change:	17feb2015
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -15,6 +15,11 @@ nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
+" switching between tabs
+nnoremap <C-T><C-H> :tabprevious<cr>
+nnoremap <C-T><C-J> :tabprevious<cr>
+nnoremap <C-T><C-K> :tabnext<cr>
+nnoremap <C-T><C-L> :tabnext<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " global mappings
