@@ -11,6 +11,7 @@ Run this:
 ```
 git clone https://github.com/jpitblado/vimfiles.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
 ```
 
 ## Thanks
