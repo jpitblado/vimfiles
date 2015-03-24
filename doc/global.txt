@@ -22,6 +22,7 @@ CONTENTS                                                      *GlobalContents*
    1.6 Sorting				   |GlobalSorting|
    1.7 Lines				   |GlobalLines|
    1.8 Dates				   |GlobalDates|
+   1.9 Version				   |GlobalVersion|
 3. License				|GlobalLicense|
 
 =============================================================================
@@ -127,6 +128,19 @@ Bound to: <leader>dd
 <leader>dd calls 'date' command using standard Stata date format.
 
 <leader>nd calls 'date' command using a standard numerical date format.
+
+-----------------------------------------------------------------------------
+1.9 Version                                                   *GlobalVersion*
+
+Bound to: <leader>uu
+          <leader>vv
+
+<leader>vv searches for the version comment, increments the version
+counter, and changes the date to the current date.
+
+<leader>uu searches for the version comment and changes the date to the
+current date.  The version counter remains unchanged.
+
 
 =============================================================================
 3. License                                                    *GlobalLicense*

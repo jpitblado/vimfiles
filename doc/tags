@@ -8,5 +8,6 @@ GlobalMappings	global.txt	/*GlobalMappings*
 GlobalShortcuts	global.txt	/*GlobalShortcuts*
 GlobalSorting	global.txt	/*GlobalSorting*
 GlobalSpelling	global.txt	/*GlobalSpelling*
+GlobalVersion	global.txt	/*GlobalVersion*
 GlobalWindow	global.txt	/*GlobalWindow*
 global.txt	global.txt	/*global.txt*

@@ -24,10 +24,6 @@ nnoremap <C-T><C-L> :tabnext<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " global mappings
 
-nnoremap <buffer> <leader>date :r !date '+\%d\%b\%Y'<cr>02lgul0k
-nmap <buffer> <leader>uu gg/\<version\>\\|\<VERSION\>/<cr>6wcw<esc><leader>dateJ:nohlsearch<cr>
-nmap <buffer> <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
-
 " replace character with 'd' then go down one line
 nnoremap ;; rdj
 
@@ -78,5 +74,10 @@ nnoremap <leader>nl o----+----1----+----2----+----3----+----4----+----5----+----
 " e.g.: 07jan2002
 nnoremap <leader>dd :r !date '+\%d\%b\%Y'<cr>02lgul0k
 nnoremap <leader>nd :r !date '+\%Y-\%m-\%d'<cr>02lgul0k
+
+" update the version comment at the top of the file
+nnoremap <buffer> <leader>date :r !date '+\%d\%b\%Y'<cr>02lgul0k
+nmap <buffer> <leader>uu gg/\<version\>\\|\<VERSION\>/<cr>6wcw<esc><leader>dateJ:nohlsearch<cr>
+nmap <buffer> <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
 
 " end: global.vim
