@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	17feb2015
+" Last Change:	24mar2015
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -24,8 +24,15 @@ nnoremap <C-T><C-L> :tabnext<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " global mappings
 
+nnoremap <buffer> <leader>date :r !date '+\%d\%b\%Y'<cr>02lgul0k
+nmap <buffer> <leader>uu gg/\<version\>\\|\<VERSION\>/<cr>6wcw<esc><leader>dateJ:nohlsearch<cr>
+nmap <buffer> <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
+
 " replace character with 'd' then go down one line
 nnoremap ;; rdj
+
+" recenter buffer at current line
+nnoremap <leader>e :e<cr>
 
 " paragraph fill
 "   to a line with no word characters
