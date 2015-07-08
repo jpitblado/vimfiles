@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	24mar2015
+" Last Change:	08jul2015
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -77,7 +77,7 @@ nnoremap <leader>nd :r !date '+\%Y-\%m-\%d'<cr>02lgul0k
 
 " update the version comment at the top of the file
 nnoremap <buffer> <leader>date :r !date '+\%d\%b\%Y'<cr>02lgul0k
-nmap <buffer> <leader>uu gg/\<version\>\\|\<VERSION\>/<cr>6wcw<esc><leader>dateJ:nohlsearch<cr>
+nmap <buffer> <leader>uu gg/\<version\>\\|\<VERSION\>/<cr>2Wcw<esc><leader>dateJ:nohlsearch<cr>
 nmap <buffer> <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
 
 " end: global.vim
