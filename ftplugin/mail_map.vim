@@ -9,9 +9,9 @@ endif
 let b:did_ftplugin = 1
 
 " indent the lines in the current paragraph with "> "
-nnoremap <buffer> ,> mp}mq'p :.,'qs/^/> /<cr>xx:nohlsearch<cr>
+nnoremap <buffer> <localleader>> mp}mq'p :.,'qs/^/> /<cr>xx:nohlsearch<cr>
 
 " indent the lines in the current paragraph with "<tab>"
-nnoremap <buffer> ,<tab> mp}mq'p :.,'qs/^/	/<cr>x:nohlsearch<cr>
+nnoremap <buffer> <localleader><tab> mp}mq'p :.,'qs/^/	/<cr>x:nohlsearch<cr>
 
 " END
