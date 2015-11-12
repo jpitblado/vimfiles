@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	15jul2015
+" Last Change:	12nov2015
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -79,5 +79,8 @@ nnoremap <leader>nd :r !date '+\%Y-\%m-\%d'<cr>02lgul0k
 nnoremap <leader>date :r !date '+\%d\%b\%Y'<cr>02lgul0k
 nmap <leader>uu gg/\<version\>\\|\<VERSION\>/<cr>2Wcw<esc><leader>dateJ:nohlsearch<cr>
 nmap <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
+
+" build/update ctags information
+nnoremap <leader>tt :! ctags -R<cr>
 
 " end: global.vim
