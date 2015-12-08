@@ -3,4 +3,5 @@ autocmd BufRead,BufNewFile *.cfg	set filetype=tex
 autocmd BufRead,BufNewFile *.cls	set filetype=tex
 autocmd BufRead,BufNewFile *.itex	set filetype=tex
 autocmd BufRead,BufNewFile *.def	set filetype=tex
+autocmd BufRead,BufNewFile *.4ht	set filetype=tex
 " end: ftdetect/tex.vim
