@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	12nov2015
+" Last Change:	14feb2016
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -82,5 +82,6 @@ nmap <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
 
 " build/update ctags information
 nnoremap <leader>tt :! ctags -R<cr>
+nnoremap <leader>TT :! ctags -R stata/ado/base lmata/ado<cr>
 
 " end: global.vim
