@@ -82,6 +82,5 @@ nmap <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
 
 " build/update ctags information
 nnoremap <leader>tt :! ctags -R<cr>
-nnoremap <leader>TT :! ctags -R stata/ado/base lmata/ado<cr>
 
 " end: global.vim
