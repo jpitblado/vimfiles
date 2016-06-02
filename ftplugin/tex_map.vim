@@ -1,7 +1,7 @@
 " ftplugin/tex_map.vim - mappings for TeX source files
 " Language:     TeX
 " Maintainer:   Jeff Pitblado <jpitblado@stata.com>
-" Last Change:  12oct2014
+" Last Change:  21feb2016
 
 if exists("b:did_ftplugin")
 	finish
@@ -17,6 +17,12 @@ nnoremap <buffer> <localleader>lb :! latex %<cr>
 
 " run TeX on current buffer
 nnoremap <buffer> <localleader>tb :! tex %<cr>
+
+" run pdfLaTeX on current buffer
+nnoremap <buffer> <localleader>plb :! pdflatex %<cr>
+
+" run pdfTeX on current buffer
+nnoremap <buffer> <localleader>ptb :! pdftex %<cr>
 
 " split to buffer with corresponding [La]TeX log
 nnoremap <buffer> <localleader>ll :split `basename % .tex`.log<cr>
