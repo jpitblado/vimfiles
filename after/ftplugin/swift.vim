@@ -1,14 +1,10 @@
 " after/ftplugin/swift.vim - after plugin for swift files
 " Language:     Swift
 " Maintainer:   Jeff Pitblado <jpitblado@stata.com>
-" Last Change:  07jul2018
+" Last Change:  09dec2018
 
-if exists("b:did_ftplugin")
-	finish
-endif
-let b:did_ftplugin = 1
-
-setlocal ts=8
-setlocal sw=8
+setlocal tabstop=4
+setlocal shiftwidth=4
+setlocal noexpandtab
 
 " END
