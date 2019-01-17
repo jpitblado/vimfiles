@@ -1,7 +1,7 @@
 " ftplugin/tex_map.vim - mappings for TeX source files
 " Language:     TeX
 " Maintainer:   Jeff Pitblado <jpitblado@stata.com>
-" Last Change:  21feb2016
+" Last Change:  19apr2018
 
 if exists("b:did_ftplugin")
 	finish
@@ -30,7 +30,7 @@ nnoremap <buffer> <localleader>ll :split `basename % .tex`.log<cr>
 " view using open on Mac
 nnoremap <buffer> <localleader>mv :! open `basename % .tex`.pdf<cr>
 
-" view using open on Linuax
-nnoremap <buffer> <localleader>lv :! evince `basename % .tex`.pdf&<cr>
+" view using open on Linux
+nnoremap <buffer> <localleader>lv :! gv `basename % .tex`.pdf&<cr>
 
 " end: ftplugin/tex_map.vim
