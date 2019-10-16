@@ -101,6 +101,9 @@ endif
 " Don't use Ex mode, use Q for formatting
 nnoremap Q gq
 
+" Make syntax sync from start of the file
+nnoremap <leader>sfs :syntax sync fromstart<cr>
+
 " turn off netrw history/bookmarks
 let g:netrw_dirhistmax = 0
 
