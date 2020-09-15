@@ -13,6 +13,7 @@ nnoremap <buffer> <localleader>c 0i//!!rm <esc>0j
 nnoremap <buffer> <localleader>C 07xj
 
 " insert line of text for debugging
+nnoremap <buffer> <localleader>0 Oconsole.log("!!rm: 0 ")<esc>
 nnoremap <buffer> <localleader>xd Oconsole.log("!!rm: 0: xx is " + xx)<esc>
 
 " end: ftplugin/javascript_map.vim
