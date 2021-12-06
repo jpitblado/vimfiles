@@ -30,7 +30,10 @@ nnoremap <buffer> <localleader>ll :split `basename % .tex`.log<cr>
 " view using open on Mac
 nnoremap <buffer> <localleader>mv :! open `basename % .tex`.pdf<cr>
 
-" view using open on Linux
-nnoremap <buffer> <localleader>lv :! gv `basename % .tex`.pdf&<cr>
+" view using evince on Linux
+nnoremap <buffer> <localleader>lv :! evince `basename % .tex`.pdf&<cr>
+
+" view using acroread on Linux
+nnoremap <buffer> <localleader>av :! acroread `basename % .tex`.pdf&<cr>
 
 " end: ftplugin/tex_map.vim
