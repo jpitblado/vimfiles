@@ -54,6 +54,10 @@ set textwidth=78
 " I like to just switch into a tab if it already exists
 set switchbuf=usetab
 
+" use :cstag behavior by default
+set cscopetag
+set cscopeverbose
+
 " Only do this part when compiled with support for autocommands
 if version >= 600
 if has("autocmd")
