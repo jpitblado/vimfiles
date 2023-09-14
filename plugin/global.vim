@@ -1,6 +1,6 @@
 " global.vim -- my global mappings.
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
-" Last Change:	14feb2016
+" Last Change:	14sep2023
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " control key mappings
@@ -82,5 +82,8 @@ nmap <leader>vv <leader>uu?\.?<cr><c-a>:nohlsearch<cr>
 
 " build/update ctags information
 nnoremap <leader>tt :! ctags -R<cr>
+
+" copy current file to MacOS pasteboard
+nnoremap <leader>pb :! cat % \| pbcopy<cr>
 
 " end: global.vim
