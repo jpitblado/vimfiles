@@ -15,6 +15,6 @@ nnoremap <buffer> <localleader>C 07xj
 nnoremap <buffer> <localleader>date :r !date '+\%d\%b\%Y'<cr>02lgul0k
 
 " insert line of text for debugging
-nnoremap <buffer> <localleader>xd Oecho "!!rm: 0: xx is \|$xx\|\n"<esc>
+nnoremap <buffer> <localleader>xd Oecho "##rm: 0: xx is \|$xx\|"<esc>
 
 " end: ftplugin/sh_map.vim
