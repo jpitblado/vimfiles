@@ -33,6 +33,9 @@ nnoremap <buffer> <localleader>mv :! open `basename % .tex`.pdf<cr>
 " view using evince on Linux
 nnoremap <buffer> <localleader>lv :! evince `basename % .tex`.pdf&<cr>
 
+" view using evince on Linux
+nnoremap <buffer> <localleader>gv :! gv `basename % .tex`.pdf&<cr>
+
 " view using acroread on Linux
 nnoremap <buffer> <localleader>av :! acroread `basename % .tex`.pdf&<cr>
 
