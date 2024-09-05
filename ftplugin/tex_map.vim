@@ -1,12 +1,16 @@
 " ftplugin/tex_map.vim - mappings for TeX source files
 " Language:     TeX
 " Maintainer:   Jeff Pitblado <jpitblado@stata.com>
-" Last Change:  19apr2018
+" Last Change:  05sep2024
 
 if exists("b:did_ftplugin")
 	finish
 endif
 let b:did_ftplugin = 1
+
+" help navigate from within tex-files by their base names using
+" 'gf' and '<C-w><C-f>'
+set includeexpr=substitute(v:fname,'\$','.tex','g')
 
 " insert/remove double bang comment line
 nnoremap <buffer> <localleader>c 0i% !!rm <esc>0j
