@@ -2,6 +2,9 @@
 " Maintainer:	Jeff Pitblado <jpitblado@stata.com>
 " Last Change:	11aug2014
 
+"set modeline=on
+set modelines=5		" look for a modeline in 
+
 filetype plugin on	" turn filetype plugins on
 set fileformat=unix	" Use UNIX <EOL>
 set nocompatible	" Use Vim defaults (much better!)
